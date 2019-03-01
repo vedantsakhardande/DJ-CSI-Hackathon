@@ -1,2 +1,7 @@
 # DJ-CSI-Hackathon
-Collabs:
+Contributors
+
+Clayton Pereira
+Solomon Jose
+Vedant Sakhardande
+Cajetan Rodrigues (me)
