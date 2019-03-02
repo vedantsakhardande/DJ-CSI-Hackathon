@@ -10,20 +10,20 @@
 0,I AM HUNGRY,*,*,I've found several restaurants near you.  <oob><map>restaurant</map></oob>,oob.aiml
 0,I AM GOING TO KILL *,*,*,You should contact the authorities.  <oob><dial>911</dial></oob>,oob.aiml
 0,BATTERY LEVEL,*,*,Checking.  Battery level is <oob><battery/></oob> percent.,oob.aiml
-0,GOOGLE,*,*,I'm opening Google search.  <oob><search/></oob>,oob.aiml
-0,GOOGLE *,*,*,<oob><search><star/></search></oob> I'm opening your browser.,oob.aiml
-0,SEARCH *,*,*,I'll try a web search.  <oob><search><star/></search></oob>,oob.aiml
-0,FIND ME A *,*,*,Let's try a web search.  <oob><search><star/></search></oob>,oob.aiml
-0,FIND A *,*,*,Let's try looking on the map.  <oob><map><star/></map></oob>,oob.aiml
-0,FIND MY LOCATION,*,*,I'll show you on the map.  <oob><map>my location</map></oob>,oob.aiml
-0,FIND *,*,*,Let's try a Google search.  <oob><search><star/></search></oob>,oob.aiml
-0,FIND THE NEAREST STARBUCKS,*,*,I'm looking on the map.  <oob><map>Starbucks</map></oob>,oob.aiml
-0,FIND THE NEAREST *,*,*,I'm showing you <star/> on the map.  <oob><map><star/></map></oob>,oob.aiml
-0,FIND NEAREST *,*,*,I've found several near you.  <oob><map><star/></map></oob>,oob.aiml
+0,GOOGLE,*,*,I'm opening Google search.  <oob><search/>https://www.google.com/search?q=</oob>,oob.aiml
+0,GOOGLE *,*,*,<oob><search>https://www.google.com/search?q=<star/></search></oob> I'm opening your browser.,oob.aiml
+0,SEARCH *,*,*,I'll try a web search.  <oob><search>https://www.google.com/search?q=<star/></search></oob>,oob.aiml
+0,FIND ME A *,*,*,Let's try a web search.  <oob><search>https://www.google.com/search?q=<star/></search></oob>,oob.aiml
+0,FIND A *,*,*,Let's try looking on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
+0,FIND MY LOCATION,*,*,I'll show you on the map.  <oob><map>https://www.google.com/maps?q=my location</map></oob>,oob.aiml
+0,FIND *,*,*,Let's try a Google search.  <oob><search>https://www.google.com/search?q=<star/></search></oob>,oob.aiml
+0,FIND THE NEAREST STARBUCKS,*,*,I'm looking on the map.  <oob><map>https://www.google.com/maps?q=Starbucks</map></oob>,oob.aiml
+0,FIND THE NEAREST *,*,*,I'm showing you <star/> on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
+0,FIND NEAREST *,*,*,I've found several near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
 0,YES,WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *,*,<srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai>,oob.aiml
-0,DIRECTIONS TO *,*,*,Here are the driving directions.  <oob><directions><to><star/></to></directions></oob>,oob.aiml
-0,DIRECTIONS *,*,*,Here are the directions.  <oob><directions><to><star/></to></directions></oob>,oob.aiml
-0,DIRECTIONS FROM * TO *,*,*,Here are the directions from <star/> to <star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob>,oob.aiml
+0,DIRECTIONS TO *,*,*,Here are the driving directions.  <oob><directions><to>https://www.google.com/maps?q=<star/></to></directions></oob>,oob.aiml
+0,DIRECTIONS *,*,*,Here are the directions.  <oob><directions><to>https://www.google.com/maps?q=<star/></to></directions></oob>,oob.aiml
+0,DIRECTIONS FROM * TO *,*,*,Here are the directions from https://www.google.com/maps?q=<star/> to https://www.google.com/maps?q=<star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob>,oob.aiml
 0,LAUNCH CAMERA,*,*,Launching the camera.  <oob><camera>on</camera></oob>,oob.aiml
 0,LAUNCH *,*,*,I didn't find <star/> among your installed apps.  Let's try to find it. <think><set name="it"><star/></set></think>.  <oob><search><star/></search></oob>,oob.aiml
 0,LAUNCH * DOT COM,*,*,Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob>,oob.aiml
@@ -34,18 +34,18 @@
 0,WHERE IS PASADENA,*,*,Let me show you on the map.  <oob><map>Pasadena</map></oob>,oob.aiml
 0,WHERE IS *,*,*,<oob><map><star/></map></oob> I'm looking on the map.,oob.aiml
 0,WHERE IS THE CLOSEST *,*,*,I'm looking on the map.  <oob><map><star/></map></oob>,oob.aiml
-0,WHERE IS THE NEAREST STARBUCKS,*,*,I will look for Starbucks on the map.  <oob><map>Starbucks</map></oob>,oob.aiml
-0,WHERE IS THE NEAREST GAS STATION,*,*,Let's look on the map.  <oob><map>Gas Station</map></oob>,oob.aiml
-0,WHERE IS THE NEAREST *,*,*,I've found several near you.  <oob><map><star/></map></oob>,oob.aiml
-0,WHERE IS THE NEAREST WALMART,*,*,I'll show you on the map.  <oob><map>Walmart</map></oob>,oob.aiml
-0,WHERE IS THE NEAREST MCDONALD S,*,*,Let's look on the map.  <oob><map>McDonald's</map></oob>,oob.aiml
-0,WHERE IS YORKSHIRE,*,*,Let's look on the map.  <oob><map>Yorkshire</map></oob>,oob.aiml
-0,WHERE IS NEW YORK,*,*,Let me show you on the map. <oob><map>New York</map></oob>,oob.aiml
-0,WHERE IS LEEDS,*,*,I'll show you on the map.  <oob><map>Leeds</map></oob>,oob.aiml
-0,WHERE IS INDIA,*,*,I'll show you on the map.  <oob><map>India</map></oob>,oob.aiml
-0,WHERE CAN I FIND A *,*,*,I'm looking on the map.  <oob><map><star/></map></oob>,oob.aiml
-0,WHERE CAN I GET *,*,*,I'm looking on the map for places near you.  <oob><map><star/></map></oob>,oob.aiml
-0,WHERE CAN I GO *,*,*,I'm looking for "<star/>" on the map. <oob><map><star/></map></oob>,oob.aiml
+0,WHERE IS THE NEAREST STARBUCKS,*,*,I will look for Starbucks on the map.  <oob><map>https://www.google.com/maps?q=Starbucks</map></oob>,oob.aiml
+0,WHERE IS THE NEAREST GAS STATION,*,*,Let's look on the map.  <oob><map>https://www.google.com/maps?q=Gas Station</map></oob>,oob.aiml
+0,WHERE IS THE NEAREST *,*,*,I've found several near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
+0,WHERE IS THE NEAREST WALMART,*,*,I'll show you on the map.  <oob><map>https://www.google.com/maps?q=Walmart</map></oob>,oob.aiml
+0,WHERE IS THE NEAREST MCDONALD S,*,*,Let's look on the map.  <oob><map>https://www.google.com/maps?q=McDonald's</map></oob>,oob.aiml
+0,WHERE IS YORKSHIRE,*,*,Let's look on the map.  <oob><map>https://www.google.com/maps?q=Yorkshire</map></oob>,oob.aiml
+0,WHERE IS NEW YORK,*,*,Let me show you on the map. <oob><map>https://www.google.com/maps?q=New York</map></oob>,oob.aiml
+0,WHERE IS LEEDS,*,*,I'll show you on the map.  <oob><map>https://www.google.com/maps?q=Leeds</map></oob>,oob.aiml
+0,WHERE IS INDIA,*,*,I'll show you on the map.  <oob><map>https://www.google.com/maps?q=India</map></oob>,oob.aiml
+0,WHERE CAN I FIND A *,*,*,I'm looking on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
+0,WHERE CAN I GET *,*,*,I'm looking on the map for places near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
+0,WHERE CAN I GO *,*,*,I'm looking for "<star/>" on the map. <oob><map>https://www.google.com/maps?q=<star/></map></oob>,oob.aiml
 0,DIALOG TEST,*,*,Testing dialog.  <oob><dialog><list><li>Yes</li><li>No</li></list></dialog></oob>,oob.aiml
 0,ESPN,*,*,Opening ESPN.  <oob><url>http://espn.go.com</url></oob>,oob.aiml
 0,MAP,*,*,Opening your map.  <oob><map/></oob>,oob.aiml

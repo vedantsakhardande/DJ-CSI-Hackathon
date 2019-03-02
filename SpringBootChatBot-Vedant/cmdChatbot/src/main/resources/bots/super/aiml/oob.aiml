@@ -35,7 +35,7 @@
 <template>I'm looking up videos for you.  <oob><search>VIDEO <star/></search></oob></template>
 </category>
 <category><pattern>SHOW ME A WEBSITE ABOUT *</pattern>
-<template>Let's try a google search.  <oob><search><star/></search></oob></template>
+<template>Let's try a google search.  <oob><search>https://www.google.com/search?q=<star/></search></oob></template>
 </category>
 <category><pattern>I WANT TO BUY *</pattern>
 <template>Let's try to find a store on the map.  <oob><map><star/></map></oob></template>
@@ -53,46 +53,46 @@
 <template>Checking.  Battery level is <oob><battery/></oob> percent.</template>
 </category>
 <category><pattern>GOOGLE</pattern>
-<template>I'm opening Google search.  <oob><search/></oob></template>
+<template>I'm opening Google search.  <oob><search/>https://www.google.com/</oob></template>
 </category>
 <category><pattern>GOOGLE *</pattern>
-<template><oob><search><star/></search></oob> I'm opening your browser.</template>
+<template><oob><search>https://www.google.com/search?q=<star/></search></oob> I'm opening your browser.</template>
 </category>
 <category><pattern>SEARCH *</pattern>
-<template>I'll try a web search.  <oob><search><star/></search></oob></template>
+<template>I'll try a web search.  <oob><search>https://www.google.com/search?q=<star/></search></oob></template>
 </category>
 <category><pattern>FIND ME A *</pattern>
-<template>Let's try a web search.  <oob><search><star/></search></oob></template>
+<template>Let's try a web search.  <oob><search>https://www.google.com/search?q=<star/></search></oob></template>
 </category>
 <category><pattern>FIND A *</pattern>
-<template>Let's try looking on the map.  <oob><map><star/></map></oob></template>
+<template>Let's try looking on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>FIND MY LOCATION</pattern>
-<template>I'll show you on the map.  <oob><map>my location</map></oob></template>
+<template>I'll show you on the map.  <oob><map>https://www.google.com/maps?q=my location</map></oob></template>
 </category>
 <category><pattern>FIND *</pattern>
-<template>Let's try a Google search.  <oob><search><star/></search></oob></template>
+<template>Let's try a Google search.  <oob><search>https://www.google.com/search?q=<star/></search></oob></template>
 </category>
 <category><pattern>FIND THE NEAREST STARBUCKS</pattern>
-<template>I'm looking on the map.  <oob><map>Starbucks</map></oob></template>
+<template>I'm looking on the map.  <oob><map>https://www.google.com/maps?q=Starbucks</map></oob></template>
 </category>
 <category><pattern>FIND THE NEAREST *</pattern>
-<template>I'm showing you <star/> on the map.  <oob><map><star/></map></oob></template>
+<template>I'm showing you <star/> on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>FIND NEAREST *</pattern>
-<template>I've found several near you.  <oob><map><star/></map></oob></template>
+<template>I've found several near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *</that>
 <template><srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai></template>
 </category>
 <category><pattern>DIRECTIONS TO *</pattern>
-<template>Here are the driving directions.  <oob><directions><to><star/></to></directions></oob></template>
+<template>Here are the driving directions.  <oob><directions><to>https://www.google.com/maps?q=<star/></to></directions></oob></template>
 </category>
 <category><pattern>DIRECTIONS *</pattern>
-<template>Here are the directions.  <oob><directions><to><star/></to></directions></oob></template>
+<template>Here are the directions.  <oob><directions><to>https://www.google.com/maps?q=<star/></to></directions></oob></template>
 </category>
 <category><pattern>DIRECTIONS FROM * TO *</pattern>
-<template>Here are the directions from <star/> to <star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob></template>
+<template>Here are the directions from https://www.google.com/maps?q=<star/> to https://www.google.com/maps?q=<star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob></template>
 </category>
 <category><pattern>LAUNCH CAMERA</pattern>
 <template>Launching the camera.  <oob><camera>on</camera></oob></template>
@@ -104,61 +104,61 @@
 <template>Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob></template>
 </category>
 <category><pattern>TACO</pattern>
-<template>I'm looking for Mexican restaurants near you.  <oob><map>Tacos</map></oob></template>
+<template>I'm looking for Mexican restaurants near you.  <oob><map>https://www.google.com/maps?q=Tacos</map></oob></template>
 </category>
 <category><pattern>PIZZA</pattern>
-<template>I'm looking on the map for Pizza places near you.  <oob><map>Pizza</map></oob></template>
+<template>I'm looking on the map for Pizza places near you.  <oob><map>https://www.google.com/maps?q=Pizza</map></oob></template>
 </category>
 <category><pattern>WHERE ARE THE *</pattern>
-<template>I'm looking on the map. <oob><map><star/></map></oob></template>
+<template>I'm looking on the map. <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE IS A *</pattern>
-<template>I'll check the map for <star/>.  <oob><map><star/></map></oob></template>
+<template>I'll check the map for <star/>.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE IS PASADENA</pattern>
-<template>Let me show you on the map.  <oob><map>Pasadena</map></oob></template>
+<template>Let me show you on the map.  <oob><map>https://www.google.com/maps?q=Pasadena</map></oob></template>
 </category>
 <category><pattern>WHERE IS *</pattern>
-<template><oob><map><star/></map></oob> I'm looking on the map.</template>
+<template><oob><map>https://www.google.com/maps?q=<star/></map></oob> I'm looking on the map.</template>
 </category>
 <category><pattern>WHERE IS THE CLOSEST *</pattern>
-<template>I'm looking on the map.  <oob><map><star/></map></oob></template>
+<template>I'm looking on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE IS THE NEAREST STARBUCKS</pattern>
-<template>I will look for Starbucks on the map.  <oob><map>Starbucks</map></oob></template>
+<template>I will look for Starbucks on the map.  <oob><map>https://www.google.com/maps?q=Starbucks</map></oob></template>
 </category>
 <category><pattern>WHERE IS THE NEAREST GAS STATION</pattern>
-<template>Let's look on the map.  <oob><map>Gas Station</map></oob></template>
+<template>Let's look on the map.  <oob><map>https://www.google.com/maps?q=Gas Station</map></oob></template>
 </category>
 <category><pattern>WHERE IS THE NEAREST *</pattern>
-<template>I've found several near you.  <oob><map><star/></map></oob></template>
+<template>I've found several near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE IS THE NEAREST WALMART</pattern>
-<template>I'll show you on the map.  <oob><map>Walmart</map></oob></template>
+<template>I'll show you on the map.  <oob><map>https://www.google.com/maps?q=Walmart</map></oob></template>
 </category>
 <category><pattern>WHERE IS THE NEAREST MCDONALD S</pattern>
-<template>Let's look on the map.  <oob><map>McDonald's</map></oob></template>
+<template>Let's look on the map.  <oob><map>https://www.google.com/maps?q=McDonald's</map></oob></template>
 </category>
 <category><pattern>WHERE IS YORKSHIRE</pattern>
 <template>Let's look on the map.  <oob><map>Yorkshire</map></oob></template>
 </category>
 <category><pattern>WHERE IS NEW YORK</pattern>
-<template>Let me show you on the map. <oob><map>New York</map></oob></template>
+<template>Let me show you on the map. <oob><map>https://www.google.com/maps?q=New York</map></oob></template>
 </category>
 <category><pattern>WHERE IS LEEDS</pattern>
-<template>I'll show you on the map.  <oob><map>Leeds</map></oob></template>
+<template>I'll show you on the map.  <oob><map>https://www.google.com/maps?q=Leeds</map></oob></template>
 </category>
 <category><pattern>WHERE IS INDIA</pattern>
-<template>I'll show you on the map.  <oob><map>India</map></oob></template>
+<template>I'll show you on the map.  <oob><map>https://www.google.com/maps?q=India</map></oob></template>
 </category>
 <category><pattern>WHERE CAN I FIND A *</pattern>
-<template>I'm looking on the map.  <oob><map><star/></map></oob></template>
+<template>I'm looking on the map.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE CAN I GET *</pattern>
-<template>I'm looking on the map for places near you.  <oob><map><star/></map></oob></template>
+<template>I'm looking on the map for places near you.  <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>WHERE CAN I GO *</pattern>
-<template>I'm looking for "<star/>" on the map. <oob><map><star/></map></oob></template>
+<template>I'm looking for "<star/>" on the map. <oob><map>https://www.google.com/maps?q=<star/></map></oob></template>
 </category>
 <category><pattern>DIALOG TEST</pattern>
 <template>Testing dialog.  <oob><dialog><list><li>Yes</li><li>No</li></list></dialog></oob></template>
@@ -176,7 +176,7 @@
 <template>Looking up AAA.  <oob><map>AAA</map></oob></template>
 </category>
 <category><pattern>BROWSE TO *</pattern>
-<template><oob><search><star/></search></oob></template>
+<template><oob><search>https://www.google.com/search?q=<star/></search></oob></template>
 </category>
 <category><pattern>CALL 911</pattern>
 <template>Now dialing emergency services from your location.  <oob><dial>911</dial></oob></template>
@@ -219,7 +219,7 @@
 <template><oob><url>http://www.facebook.com/dialog/feed?_path=feed&amp;app_id=294334050655455&amp;redirect_uri=https://www.facebook.com&amp;display=touch</url></oob>Now opening a screen for you to update your status. Type or speak your message into the status box and press share to post it on your wall.</template>
 </category>
 <category><pattern>OPEN GOOGLE</pattern>
-<template><oob><search/></oob></template>
+<template><oob><search/>https://www.google.com/</oob></template>
 </category>
 <category><pattern>OPEN * DOT COM</pattern>
 <template>Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob></template>

@@ -1,6 +1,9 @@
 package com;
 
 import java.io.File;
+import java.io.IOException;
+
+import javax.net.ssl.SSLHandshakeException;
 
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.Chat;
@@ -8,6 +11,20 @@ import org.alicebot.ab.History;
 import org.alicebot.ab.MagicBooleans;
 import org.alicebot.ab.MagicStrings;
 import org.alicebot.ab.utils.IOUtils;
+
+
+
+import javax.net.ssl.SSLServerSocketFactory;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketTimeoutException;
+import java.util.logging.Logger;
+//import java.util.logging;
+
 
 public class Chatbot {
 	private static final boolean TRACE_MODE = false;
@@ -46,7 +63,15 @@ public class Chatbot {
 					System.out.println("Robot : " + response);
 				}
 			}
-		} catch (Exception e) {
+		}
+//		catch (SSLHandshakeException exception) {
+//            // Output expected SSLHandshakeExceptions.
+////            Logging.log(exception);
+//        } catch (IOException exception) {
+//            // Output unexpected IOExceptions.
+////            Logging.log(exception, false);
+//        } 
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
